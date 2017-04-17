@@ -37,11 +37,15 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-		function myFunction(){
+		function myEventFunction(){
 			alert('Lucero Garcia: This is a test');
 		}
-		var d2= document.getElementById('entrybutton');
-		d3.addEventListener('click',myFunction);
+		var d3 = document.getElementById('entrybutton');
+		d3.addEventListener('click', myEventFunction);
+		d3.addEventListener('click' , function(){
+			console.log('I was clicked!');
+		});
+		
 	</script>
 </body>
 </html>
