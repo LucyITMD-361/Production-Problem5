@@ -38,12 +38,13 @@
 	</div>
 	<script type="text/javascript">
 		function myEventFunction(){
-			alert('Lucero Garcia: This is a test');
+			var d3 = document.getElementById('entrybutton'.value);
+			alert('Lucero Garcia:' + d3);
 		}
-		var d3 = document.getElementById('entrybutton');
+		
 		d3.addEventListener('click', myEventFunction);
 		d3.addEventListener('click' , function(){
-			console.log('I was clicked!');
+	        d3.innerHTML = d3;	
 		});
 		
 	</script>
