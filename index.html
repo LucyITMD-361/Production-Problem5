@@ -37,16 +37,15 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
-		function myEventFunction(){
-			var d3 = document.getElementById('entrybutton').value;
-			alert('Lucero Garcia:' + d3);
+		 document.getElementById('entrybutton').addEventListener('click', myEventFunction);
+	         myEventFunction(){
+	            var d3 = document.getElementById('entryinput').value;
+	            alert('Lucero Garcia: ' + d3);
+                    document.getElementById('textoutput').innerHTML = d3
 		}
-		
-		d3.addEventListener('click', myEventFunction);
-		d3.addEventListener('click' , function(){
-	        d3.innerHTML = d3;	
-		});
+
 		
 	</script>
+
 </body>
 </html>
